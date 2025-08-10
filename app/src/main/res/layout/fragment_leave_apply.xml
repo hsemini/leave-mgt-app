@@ -1,0 +1,369 @@
+<!--
+ ___________________________________________________________________________________________________
+ Created By : Ms.K.A.H.Semini
+ Date       : 2017.10.17
+ Location   : IT Unit,Chief Secretary's Office,Galle
+ ___________________________________________________________________________________________________
+ Maintain Details:
+
+        Date           Name                             Details
+ (01)   2017.10.17     Ms. K.A.H.Semini                 Created
+ (02)
+ ___________________________________________________________________________________________________
+
+ -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/boovitiya_yellow"
+    android:layout_height="match_parent"
+    tools:context="com.example.asus.e_niwadumobileapplication.fragmentHandler.profileFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:background="@color/white"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/relativeLayout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/boovitiya_purple"
+            android:id="@+id/relativeLayout2">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:id="@+id/textView"
+                android:text="@string/request_leave_title"
+                android:textColor="@color/boovitiya_yellow"
+                android:textSize="24sp"
+                android:textAlignment="gravity"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="14dp"
+                android:layout_marginStart="14dp" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@mipmap/apply_leave"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/relativeLayout"
+        android:layout_alignEnd="@+id/relativeLayout"
+        android:layout_alignLeft="@+id/relativeLayout"
+        android:layout_alignRight="@+id/relativeLayout"
+        android:layout_alignStart="@+id/relativeLayout"
+        android:layout_marginTop="45dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="0sp"
+            android:layout_margin="5sp"
+            android:layout_weight="9">
+
+
+            <TableLayout
+                android:id="@+id/leaveTable1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:padding="2sp"
+                android:shrinkColumns="0">
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/leavetype_tytile"
+                        android:layout_width="0sp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="5sp"
+                        android:layout_weight="1"
+                        android:minHeight="30sp"
+                        android:text="@string/leave_type"
+                        android:textColor="#696969"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/leave_type"
+                        android:layout_width="200dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/relativeLayout2"
+                        android:layout_marginLeft="5sp"
+                        android:background="@android:drawable/btn_dropdown"
+                        android:spinnerMode="dropdown">
+
+                    </Spinner>
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/no_of_days_tytile"
+                        android:layout_width="0sp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="5sp"
+                        android:layout_weight="1"
+                        android:minHeight="35sp"
+                        android:text="@string/no_of_days"
+                        android:textColor="#696969"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+
+                    <EditText
+                        android:id="@+id/leave_days"
+                        android:layout_width="0sp"
+                        android:layout_height="50dp"
+                        android:layout_marginRight="5sp"
+                        android:layout_weight="2"
+                        android:inputType="number"
+                        android:clickable="true"
+                        android:focusableInTouchMode="true"
+                        android:minHeight="50sp"
+                        android:textColor="#000000"
+                        android:textColorHint="#696969"
+                        android:textSize="15sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/start_date_title"
+                        android:layout_width="0sp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="5sp"
+                        android:layout_weight="2"
+                        android:minHeight="35sp"
+                        android:text="@string/start_date"
+                        android:textColor="#696969"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/start_date"
+                        android:layout_width="0sp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="5sp"
+                        android:layout_weight="2"
+                        android:clickable="true"
+                        android:hint="@string/click_add"
+                        android:minHeight="35sp"
+                        android:textColor="#696969"
+                        android:textSize="15sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/end_date_tityle"
+                        android:layout_width="0sp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="5sp"
+                        android:layout_weight="2"
+                        android:minHeight="35sp"
+                        android:text="@string/end_date"
+                        android:textColor="#696969"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/end_date"
+                        android:layout_width="0sp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="5sp"
+                        android:layout_weight="2"
+                        android:clickable="true"
+                        android:hint="@string/click_add"
+                        android:minHeight="35sp"
+                        android:textColor="#696969"
+                        android:textSize="15sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp">
+
+                    <TextView
+                        android:id="@+id/coming_date_tityle"
+                        android:layout_width="0sp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="5sp"
+                        android:layout_weight="2"
+                        android:minHeight="35sp"
+                        android:text="@string/coming_date"
+                        android:textColor="#696969"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/coming_date"
+                        android:layout_width="0sp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="5sp"
+                        android:layout_weight="2"
+                        android:clickable="true"
+                        android:hint="@string/click_add"
+                        android:minHeight="35sp"
+                        android:textColor="#696969"
+                        android:textSize="15sp" />
+
+                </TableRow>
+
+
+                <TableRow
+                    android:id="@+id/tableRow6"
+                    android:layout_width="fill_parent">
+
+                    <TextView
+                        android:id="@+id/leave_note_title"
+                        android:layout_width="0sp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="5sp"
+                        android:layout_marginTop="0dp"
+                        android:layout_weight="1"
+                        android:minHeight="30sp"
+                        android:text="@string/leave_note"
+                        android:textColor="#696969"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/leave_note"
+                        android:layout_width="0sp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5sp"
+                        android:layout_weight="2"
+                        android:background="#C7C7C7"
+                        android:hint="@string/request_leave_hint"
+                        android:minHeight="50sp"
+                        android:paddingLeft="5sp"
+                        android:textColor="#000000"
+                        android:clickable="true"
+                        android:focusableInTouchMode="true"
+                        android:textColorHint="#696969"
+                        android:textSize="15sp" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow8"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout></RelativeLayout>
+                    <Button
+                        android:id="@+id/leave_upload_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/boovitiya_purple"
+                        android:text="Request Leave"
+                        android:layout_weight="2"
+                        android:textColor="@color/boovitiya_yellow"/>
+
+                    <Button
+                        android:id="@+id/leave_cancle_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:background="@color/boovitiya_purple"
+                        android:text="Cancel"
+                        android:textColor="@color/boovitiya_yellow"  />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow9"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/splash_copyright"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:layout_weight="3"
+                        android:text="@string/it_unit"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+            </TableLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

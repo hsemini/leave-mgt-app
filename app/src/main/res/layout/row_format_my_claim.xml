@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/specialTableRow1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:minHeight="15sp"
+    android:layout_marginLeft="10sp"
+    android:layout_marginRight="10sp"
+    android:layout_marginBottom="10sp">
+
+
+    <LinearLayout
+        android:id="@+id/LinearLayout01"
+        android:layout_width="0sp"
+        android:layout_height="100dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+
+        <TableLayout
+            android:id="@+id/profileTable1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="2sp"
+            android:shrinkColumns="0">
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="1sp">
+
+                <TextView
+                    android:id="@+id/leave_type"
+                    android:layout_width="0sp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="2sp"
+                    android:layout_marginTop="1dp"
+                    android:layout_weight="1"
+                    android:minHeight="20dp"
+                    android:textColor="@color/boovitiya_purple"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+
+
+            </TableRow>
+
+            <TableRow android:id="@+id/tableRow2"
+                android:layout_width="fill_parent"
+                android:layout_marginBottom="1sp">
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_weight="1.2"
+                    android:minHeight="20dp"
+                    android:text="From:"
+                    android:id="@+id/from"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="2sp"
+                    android:layout_marginTop="1dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"/>
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_weight="2"
+                    android:minHeight="20dp"
+                    android:layout_marginRight="2sp"
+                    android:layout_marginTop="1dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/start_day"
+                    android:gravity="left"
+                    android:textSize="12sp"
+                    android:textColor="#000000"/>
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_weight="0.6"
+                    android:minHeight="20dp"
+                    android:text="To:"
+                    android:id="@+id/to"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="2sp"
+                    android:layout_marginTop="1dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"/>
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_weight="2"
+                    android:minHeight="20dp"
+                    android:layout_marginRight="2sp"
+                    android:layout_marginTop="1dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/end_day"
+                    android:gravity="left"
+                    android:textSize="12sp"
+                    android:textColor="#000000"/>
+
+            </TableRow>
+
+            <TableRow android:id="@+id/tableRow3"
+                android:layout_width="fill_parent"
+                android:layout_marginBottom="1sp">
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_weight="1"
+                    android:minHeight="60sp"
+                    android:id="@+id/leave_details"
+                    android:textSize="12sp"
+                    android:textColor="#696969"
+                    android:layout_marginLeft="2sp"
+                    android:layout_marginTop="1dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"/>
+
+            </TableRow>
+        </TableLayout>
+
+
+    </LinearLayout>
+
+
+</TableRow>

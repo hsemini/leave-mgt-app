@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ ___________________________________________________________________________________________________
+ Created By : Ms.K.A.H.Semini
+ Date       : 2017.10.17
+ Location   : IT Unit,Chief Secretary's Office,Galle
+ ___________________________________________________________________________________________________
+ Maintain Details:
+
+        Date           Name                             Details
+ (01)   2017.10.11     Ms. K.A.H.Semini                 Created
+ (02)
+ ___________________________________________________________________________________________________
+
+ -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/boovitiya_yellow"
+    android:layout_height="match_parent"
+    tools:context="com.example.asus.e_niwadumobileapplication.fragmentHandler.profileFragment">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:background="@color/white"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/relativeLayout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/boovitiya_purple"
+            android:id="@+id/relativeLayout2">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:id="@+id/textView"
+                android:text="@string/profile_title"
+                android:textColor="@color/boovitiya_yellow"
+                android:textSize="24sp"
+                android:textAlignment="gravity"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="14dp"
+                android:layout_marginStart="14dp" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@mipmap/profile"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <ImageView
+                android:id="@+id/bt_edit"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:paddingTop="1dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                app:srcCompat="@mipmap/edit"
+                android:clickable="true"/>
+
+        </RelativeLayout>
+
+        <TableLayout
+            android:id="@+id/profileTable1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="2sp"
+            android:shrinkColumns="0">
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10sp">
+
+                <TextView
+                    android:id="@+id/profile_emp_no"
+                    android:layout_width="0sp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginTop="50dp"
+                    android:layout_weight="1"
+                    android:minHeight="30sp"
+                    android:text="@string/emp_no"
+                    android:textColor="#696969"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/emp_no"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20sp"
+                    android:layout_marginTop="50dp"
+                    android:layout_weight="2"
+                    android:hint="Your employee No"
+                    android:minHeight="30sp"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+            </TableRow>
+
+            <TableRow android:id="@+id/tableRow2"
+                android:layout_width="fill_parent"
+                android:layout_marginBottom="10sp">
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_weight="1"
+                    android:minHeight="30sp"
+                    android:text="@string/full_name"
+                    android:id="@+id/profile_full_name"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:textColor="#696969"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"/>
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_weight="2"
+                    android:minHeight="30sp"
+                    android:layout_marginRight="20sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/full_name"
+                    android:textSize="15sp"
+                    android:hint="Your Name"
+                    android:textColor="#000000"/>
+
+            </TableRow>
+
+            <TableRow android:id="@+id/tableRow3"
+                android:layout_width="fill_parent"
+                android:layout_marginBottom="10sp">
+
+                <TextView
+                    android:layout_width="0sp"
+                    android:layout_weight="1"
+                    android:minHeight="30sp"
+                    android:text="Post"
+                    android:id="@+id/profile_post"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:textColor="#696969"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"/>
+
+                <EditText
+                    android:layout_width="0sp"
+                    android:layout_weight="2"
+                    android:minHeight="30sp"
+                    android:layout_marginRight="20sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/post"
+                    android:enabled="false"
+                    android:textSize="15sp"
+                    android:hint="Your Post"
+                    android:textColorHint="#696969"
+                    android:textColor="#000000"/>
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10sp">
+
+                <TextView
+                    android:id="@+id/profile_mobile_no"
+                    android:layout_width="0sp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:minHeight="30sp"
+                    android:text="@string/mobile_no"
+                    android:textColor="#696969"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/mobile_no"
+                    android:layout_width="0sp"
+                    android:layout_height="wrap_content"
+                    android:maxLength="10"
+                    android:layout_marginRight="20sp"
+                    android:layout_weight="2"
+                    android:hint="Your Phone Number"
+                    android:minHeight="30sp"
+                    android:paddingLeft="5sp"
+                    android:textColor="#000000"
+                    android:textColorHint="#696969"
+                    android:enabled="false"
+                    android:textSize="15sp"
+                    android:inputType="phone"/>
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10sp">
+
+                <Button
+                    android:id="@+id/profile_upload_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:visibility="invisible"
+                    android:text="Upload"
+                    android:textColor="@color/boovitiya_yellow"
+                    android:background="@color/boovitiya_purple"
+                    android:layout_marginTop="22dp" />
+
+                <Button
+                    android:id="@+id/profile_cancle_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:visibility="invisible"
+                    android:text="Cancel"
+                    android:textColor="@color/boovitiya_yellow"
+                    android:background="@color/boovitiya_purple"
+                    android:layout_marginTop="22dp"/>
+
+            </TableRow>
+
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/splash_copyright"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/it_unit"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

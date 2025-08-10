@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ ___________________________________________________________________________________________________
+ Created By : K.A.H.Semini
+ Date       : 2017.10.10
+ Location   : ICT Unit,Chief Secretary's Office,Galle
+ ___________________________________________________________________________________________________
+ Maintain Details:
+
+        Date           Name                            Detail
+ (01)   2017.10.10     Ms.K.A.H.Semini                 Created
+
+ ___________________________________________________________________________________________________
+
+ -->
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    tools:context="com.example.asus.e_niwadumobileapplication.mainActivities.SplashScreen">
+
+
+    <ImageView
+        android:id="@+id/national_logo"
+        android:layout_width="47dp"
+        android:layout_height="45dp"
+        android:src="@mipmap/national_logo"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/southern_flower"
+        android:layout_toStartOf="@+id/southern_flower"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+    <ImageView
+        android:id="@+id/southern_flag"
+        android:layout_width="43dp"
+        android:layout_height="36dp"
+        android:src="@mipmap/flag"
+        android:layout_alignBottom="@+id/national_logo"
+        android:layout_toLeftOf="@+id/national_logo"
+        android:layout_toStartOf="@+id/national_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+    <ImageView
+        android:id="@+id/southern_flower"
+        android:layout_width="48dp"
+        android:layout_height="28dp"
+        android:src="@mipmap/heen_bovitiya_2"
+        android:layout_alignBottom="@+id/sls_logo"
+        android:layout_toLeftOf="@+id/sls_logo"
+        android:layout_toStartOf="@+id/sls_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+    <ImageView
+        android:id="@+id/productivity_logo"
+        android:layout_width="24dp"
+        android:layout_height="34dp"
+        android:src="@mipmap/productivity_logo"
+        android:layout_alignBottom="@+id/southern_flag"
+        android:layout_toLeftOf="@+id/southern_flag"
+        android:layout_toStartOf="@+id/southern_flag"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+    <ImageView
+        android:id="@+id/sls_logo"
+        android:layout_width="36dp"
+        android:layout_height="32dp"
+        android:src="@mipmap/sls"
+        android:layout_alignTop="@+id/slab_logo"
+        android:layout_toLeftOf="@+id/slab_logo"
+        android:layout_toStartOf="@+id/slab_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <ImageView
+        android:id="@+id/slab_logo"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:src="@mipmap/slab"
+        android:layout_marginRight="46dp"
+        android:layout_marginEnd="46dp"
+        android:layout_alignBottom="@+id/national_logo"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/office_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/office_name"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textAlignment="gravity"
+        android:layout_below="@+id/national_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/office_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/office_location"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textAlignment="gravity"
+        android:layout_below="@+id/office_name"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:indeterminateDrawable="@drawable/progress_ring_style"
+        android:layout_gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/loading_statement"
+        android:textColor="@color/boovitiya_yellow"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textAlignment="gravity"
+        android:layout_below="@+id/progressBar"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/it_unit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/it_unit"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="12sp"
+        android:textAlignment="gravity"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/office_location"
+        android:layout_alignStart="@+id/office_location"
+        android:layout_marginBottom="14dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+
+
+</RelativeLayout>
+
+

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+ ___________________________________________________________________________________________________
+ Created By : Ms. K.A.H.Semini
+ Date       : 2017.10.11
+ Location   : ICT Unit,Chief Secretary's Office,Galle
+ ___________________________________________________________________________________________________
+ Maintain Details:
+
+        Date           Name                        Details
+ (01)   2017.10.11     Ms.K.A.H.Semini             Created
+
+ ___________________________________________________________________________________________________
+
+ -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    tools:context="com.example.asus.e_niwadumobileapplication.mainActivities.LoginActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:title="@string/app_name"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/login_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="45sp"
+            android:inputType="text"
+            android:id="@+id/login_UserName"
+            android:hint="@string/user_name"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:layout_marginBottom="5sp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="45sp"
+            android:inputType="textPassword"
+            android:hint="@string/password"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:ems="10"
+            android:id="@+id/login_PassWord"
+            android:layout_marginBottom="10sp"
+            android:layout_alignTop="@+id/login_UserName"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:background="@color/boovitiya_purple"
+            android:id="@+id/login_loginButton"
+            android:textColor="@color/boovitiya_yellow"
+            android:text="@string/login"
+            android:gravity="center"
+            android:layout_below="@+id/login_PassWord"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="@string/it_unit"
+            android:id="@+id/splash_copyright"
+            android:textSize="12sp"/>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/app_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/logo"
+        android:layout_marginBottom="26dp"
+        android:layout_above="@+id/login_layout1"
+        android:layout_alignRight="@+id/login_layout1"
+        android:layout_alignEnd="@+id/login_layout1"
+        android:layout_marginTop="61dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/login_layout1"
+        android:layout_alignStart="@+id/login_layout1" />
+
+    <TextView
+        android:id="@+id/sub_topic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/boovitiya_purple"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="@string/sub_topic"
+        android:layout_marginBottom="8dp"
+        android:layout_alignBottom="@+id/app_logo"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

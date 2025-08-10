@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+ ___________________________________________________________________________________________________
+ Created By : Ms. K.A.H.Semini
+ Date       : 2017.10.11
+ Location   : ICT Unit,Chief Secretary's Office,Galle
+ ___________________________________________________________________________________________________
+ Maintain Details:
+
+        Date           Name                             Details
+ (01)   2017.10.11     Ms. K.A.H.Semini                 Created
+ (02)
+ ___________________________________________________________________________________________________
+
+ -->
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.asus.e_niwadumobileapplication.mainActivities.HomePage">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:id="@+id/appBarLayout">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/fragmentHandler"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:weightSum="3"
+        android:layout_below="@+id/appBarLayout">
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

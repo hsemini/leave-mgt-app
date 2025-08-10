@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ ___________________________________________________________________________________________________
+ Created By : K.A.H.Semini
+ Date       : 2017.10.17
+ Location   : ICT Unit,Chief Secretary's Office,Galle
+ ___________________________________________________________________________________________________
+ Maintain Details:
+
+        Date            Name                                Details
+ (01)   2017.11.20      Ms.K.A.H.Semini                     Created
+ (02)   2017.12.02      Ms.K.A.H.Semini                     Edited
+ ___________________________________________________________________________________________________
+
+ -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/boovitiya_yellow"
+    tools:context="com.example.asus.e_niwadumobileapplication.fragmentHandler.aboutFragment">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="5dp"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/boovitiya_purple">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="5dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginStart="14dp"
+                android:text="About"
+                android:textAlignment="gravity"
+                android:textColor="@color/boovitiya_yellow"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                app:srcCompat="@mipmap/about" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:srcCompat="@mipmap/logo"
+            android:layout_marginTop="25dp"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/content"
+            android:text="@string/body"
+            android:layout_marginTop="175dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#000000"
+            android:layout_gravity="center_vertical|right"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/version"
+            android:text="Version 1.0"
+            android:layout_marginTop="270dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#000000"
+            android:layout_gravity="center_vertical|right"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/release"
+            android:text="Released in 2017"
+            android:layout_marginTop="300dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#000000"
+            android:layout_gravity="center_vertical|right"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/creator"
+            android:text="Created by Ms.Kalu Arachchige Hasara Semini, IT Unit, Cheif Secretary's Office, Southern Province."
+            android:layout_marginTop="330dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#000000"
+            android:layout_gravity="center_vertical|right"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:id="@+id/it_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/it_unit"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:textAlignment="gravity"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/office_location"
+            android:layout_alignStart="@+id/office_location"
+            android:layout_marginBottom="14dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+</FrameLayout>

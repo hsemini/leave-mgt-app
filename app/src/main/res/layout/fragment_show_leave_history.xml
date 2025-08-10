@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ ___________________________________________________________________________________________________
+ Created By : K.A.H.Semini
+ Date       : 2017.10.17
+ Location   : ICT Unit,Chief Secretary's Office,Galle
+ ___________________________________________________________________________________________________
+ Maintain Details:
+
+        Date            Name                                Details
+ (01)   2017.11.20      Ms.K.A.H.Semini                     Created
+ (02)   2017.12.02      Ms.K.A.H.Semini                     Edited
+ ___________________________________________________________________________________________________
+
+ -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/boovitiya_yellow"
+    tools:context="com.example.asus.e_niwadumobileapplication.fragmentHandler.aboutFragment">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="5dp"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/boovitiya_purple">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="5dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginStart="14dp"
+                android:text="Leave Details"
+                android:textAlignment="gravity"
+                android:textColor="@color/boovitiya_yellow"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                app:srcCompat="@mipmap/details" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:id="@+id/relativeLayout3">
+
+            <ListView
+                android:id="@+id/leaveList"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/boovitiya_yellow"
+                android:layout_marginTop="40dp"/>
+
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:background="@color/boovitiya_purple"
+            android:textColor="@color/boovitiya_yellow"
+            android:textSize="24dp"
+            android:id="@+id/btBack"
+            android:layout_below="@+id/relativeLayout3"
+            android:visibility="invisible"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+
+        <TextView
+            android:id="@+id/it_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/it_unit"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:textAlignment="gravity"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/office_location"
+            android:layout_alignStart="@+id/office_location"
+            android:layout_marginBottom="14dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

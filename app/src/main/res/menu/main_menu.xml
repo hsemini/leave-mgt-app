@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ ___________________________________________________________________________________________________
+ Created By : K.A.H.Semini
+ Date       : 2017.10.12
+ Location   : ICT Unit,Chief Secretary's Office,Galle
+ ___________________________________________________________________________________________________
+ Maintain Details:
+
+        Date           Name                                  Detail
+ (01)
+
+ ___________________________________________________________________________________________________
+
+ -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:scrollbarAlwaysDrawHorizontalTrack="true"
+    android:background="#3BB9FF"
+    tools:context="com.example.administrator.nsis_project">
+
+    <item
+        android:id="@+id/action_home"
+        android:title="@string/homePage"
+        android:icon="@mipmap/home"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/action_Log_Off"
+        android:title="@string/login_out"
+        android:titleCondensed="@string/login_out"
+        app:showAsAction="always"
+        android:icon="@mipmap/logout"/>
+
+    <item
+        android:id="@+id/action_profile"
+        android:title="@string/profile"
+        android:titleCondensed="@string/profile"
+        app:showAsAction="ifRoom"
+        android:icon="@mipmap/profile"/>
+
+    <item
+        android:id="@+id/action_users"
+        android:title="Users"
+        android:titleCondensed="Users"
+        app:showAsAction="ifRoom"
+        android:icon="@mipmap/users"/>
+
+    <item
+        android:id="@+id/action_Leave"
+        android:title="@string/leave"
+        android:icon="@mipmap/leave"
+        app:showAsAction="ifRoom">
+
+        <menu>
+
+            <item
+                android:id="@+id/action_apply_leave"
+                android:title="@string/apply_Leave"
+                android:icon="@mipmap/apply_leave"
+                app:showAsAction="always"/>
+
+            <item
+                android:id="@+id/action_leave_history"
+                android:title="@string/leave_history"
+                android:icon="@mipmap/history"
+                app:showAsAction="always"/>
+
+        </menu>
+
+    </item>
+    <item
+        android:id="@+id/action_change_password"
+        android:title="@string/password"
+        android:icon="@mipmap/change_password"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/action_about"
+        android:title="@string/app_description"
+        android:icon="@mipmap/about"
+        app:showAsAction="ifRoom"/>
+
+
+</menu>

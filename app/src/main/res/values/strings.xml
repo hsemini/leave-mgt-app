@@ -1,0 +1,62 @@
+<resources>
+    <!-- Main heading details -->
+    <string name="app_name">Leave Application</string>
+    <string name="sub_topic">Apply      Your    Leave   via   Internet...</string>
+    <string name="office_name">CHIEF SECRETARY\'S OFFICE</string>
+    <string name="office_location">SOUTHERN PROVINCE</string>
+    <string name="loading_statement">Loading...</string>
+    <string name="it_unit">©2017 (Solution By K.A.H.Semini)</string>
+
+    <!-- word phases -->
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="user_name">User Name</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+
+    <!-- error messages -->
+    <string name="server_err">server error,Please try again later.</string>
+    <string name="login_err_1">Invalid User Name or Password. Please try again.</string>
+    <string name="login_err_2">Please enter both User Name and Password.</string>
+    <string name="missing_fields">Please enter details for all fields.</string>
+    <string name="title_activity_home_page">HomePage</string>
+
+    <!-- menu components -->
+    <string name="homePage">Home</string>
+    <string name="login_out">Login Out</string>
+    <string name="leave">Leave</string>
+    <string name="changePassword">Change Password</string>
+    <string name="profile">My Profile</string>
+    <string name="app_description">About</string>
+    <string name="help">Help</string>
+    <string name="leave_history">Leave History</string>
+    <string name="apply_Leave">Request Leave</string>
+
+
+    <!-- profile fragment -->
+    <string name="profile_title">My Profile</string>
+    <string name="full_name">Full Name</string>
+    <string name="emp_no">Employee No.</string>
+    <string name="mobile_no">Phone No.</string>
+    <string name="post">Post</string>
+
+
+    <!-- request Leave fragment-->
+    <string name="request_leave_title">Request a Leave</string>
+    <string name="leave_type">Leave Type</string>
+    <string name="leave_note">Duty Detail</string>
+    <string name="request_leave_hint">Type the reason for request a leave</string>
+    <string name="no_of_days">No. of days</string>
+    <string name="start_date">Date of commencing leave</string>
+    <string name="end_date">Date of end leave</string>
+    <string name="coming_date">Date of resuming duties</string>
+    <string name="click_add">Click to add date</string>
+
+    <!-- Leave History Fragment -->
+    <string name="leave_history_title">Leave History</string>
+
+
+    <string name="body">This is a android mobile application which is used to apply leave dates of staff assistant members in Southern Province. </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
